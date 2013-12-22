@@ -18,7 +18,7 @@ resolve = require('path').resolve;
 getOwnPropertyNames = Object.getOwnPropertyNames.bind(Object);
 defineProperty = Object.defineProperty.bind(Object);
 
-rwin = function rwin(lib, dirname) {
+rwin = function rwin(imports, dirname) {
     var store,
         rwinLib,
         propertyNames,
@@ -26,18 +26,18 @@ rwin = function rwin(lib, dirname) {
 
     store = {};
     rwinLib = {};
-    propertyNames = getOwnPropertyNames(lib);
-    onEachProperty = setDescriptor.bind(rwinLib, lib, store, dirname);
+    propertyNames = getOwnPropertyNames(imports);
+    onEachProperty = setDescriptor.bind(rwinLib, imports, store, dirname);
     propertyNames.forEach(onEachProperty);
 
     return rwinLib;
 };
 
-setDescriptor = function setDescriptor(lib, store, dirname, name) {
+setDescriptor = function setDescriptor(imports, store, dirname, name) {
     var path,
         descriptor;
 
-    path = lib[name];
+    path = imports[name];
 
     descriptor = {
         enumerable: true,

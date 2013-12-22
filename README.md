@@ -20,13 +20,13 @@ Usage :
 -------
 
 ``` JavaScript
-lib = rwin(paths, [dirname]);
+lib = rwin(imports, [dirname]);
 ```
 Where :
 
 `lib` : is an object that contains an accessor for each required modules
 
-`paths` : is an object that contains the accessor name paired with the module path
+`imports` : is an object that contains the accessor name paired with the module path
 
 `dirname` : is the source path, generally __dirname (useless if You only require installed modules)
 
@@ -35,14 +35,16 @@ Example:
 --------
 
 ``` JavaScript
-var rwin, lib;
+var rwin, imports, lib;
 
 rwin = require('rwin');
 
-lib = rwin({
+imports = {
   installedModule: 'installed-module',
   uninstalledModule: '/uninstalled-module/path'
-}, __dirname);
+};
+
+lib = rwin(imports, __dirname);
 
 // At this point, rwin is the only one loaded module (and its own dependencies)
 
