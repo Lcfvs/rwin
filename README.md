@@ -1,13 +1,9 @@
 rwin
 ====
 
-
-Concept :
----------
-
 Because some of the required modules are sometimes loaded and use your memory for nothing...
 
-<strong>rwin</strong> (Require When I Need), is a lightweight tool that loads the required module only when and if you need it!
+<strong>Require When I Need</strong> is a lightweight tool that loads the required module only when and if you need it!
 
 This Node.js module is under MIT License.
 
