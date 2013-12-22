@@ -18,7 +18,7 @@ resolve = require('path').resolve;
 getOwnPropertyNames = Object.getOwnPropertyNames.bind(Object);
 defineProperty = Object.defineProperty.bind(Object);
 
-rwin = function rwin(dirname, lib) {
+rwin = function rwin(lib, dirname) {
     var store,
         rwinLib,
         propertyNames,

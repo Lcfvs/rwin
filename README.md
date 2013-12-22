@@ -28,10 +28,10 @@ var rwin, lib;
 
 rwin = require('rwin');
 
-lib = rwin(__dirname, {
+lib = rwin({
   installedModule: 'installed-module',
   uninstalledModule: '/uninstalled-module/path'
-});
+}, __dirname);
 
 // At this point, rwin is the only one loaded module (and its own dependencies)
 
