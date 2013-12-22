@@ -4,7 +4,7 @@
   "description": "Require When I Need is a Node.js module loader that loads the required module when you need it.",
   "homepage": "https://github.com/Lcfvs/",
   "keywords": ["require", "modules", "when", "needed"],
-  "version": "1.1.3",
+  "version": "1.1.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/Lcfvs/rwin.git"

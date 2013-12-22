@@ -3,7 +3,7 @@ rwin
 
 Like to keep your requires in the script header?
 
-Tired of load modules that will possibly not been used, and overloading your RAM?
+Tired to load modules that will possibly not been used and overloading your RAM?
 
 <strong>Require When I Need</strong> is a lightweight tool that loads the required module only when and if you need it!
 
