@@ -24,8 +24,11 @@ lib = rwin(paths, [dirname]);
 ```
 
 Where :
+
 `lib` : is the container that contains an accessor for each required modules
+
 `paths` : is an object that contains the accessor name paired with the module path
+
 `dirname` : is the source path, generally __dirname (useless if You only require installed modules)
 
 
