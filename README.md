@@ -1,7 +1,9 @@
 rwin
 ====
 
-Because some of the required modules are sometimes loaded and use your memory for nothing...
+Like to keep your requires in the script header?
+
+Tired of load modules that will possibly not been used, and overloading your RAM?
 
 <strong>Require When I Need</strong> is a lightweight tool that loads the required module only when and if you need it!
 
@@ -17,7 +19,9 @@ Install :
 Usage :
 -------
 
+``` JavaScript
 lib = rwin(paths, [dirname]);
+```
 
 Where :
 `lib` : is the container that contains an accessor for each required modules
