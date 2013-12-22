@@ -1,7 +1,7 @@
 /*
-Copyright 2013 Lcf.vs
-Released under the MIT license
-https://github.com/Lcfvs/rwin
+    Copyright 2013 Lcf.vs
+    Released under the MIT license
+    https://github.com/Lcfvs/rwin
 */
 
 'use strict';
@@ -66,18 +66,18 @@ load = function load(dirname, path) {
         isNodeModule,
         modulePath,
         module;
-    
+
     firstChar = path.charAt(0);
     isNodeModule = firstChar !== '.' && firstChar !== '/';
-    
+
     if (isNodeModule) {
         modulePath = path;
     } else {
         modulePath = resolve(dirname, path);
     }
-    
+
     module = require(modulePath);
-    
+
     return module;
 };
 

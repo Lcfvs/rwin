@@ -12,13 +12,11 @@ This Node.js module is under MIT License.
 
 Install :
 ---------
-
 `$ npm install rwin`
 
 
 Usage :
 -------
-
 ``` JavaScript
 lib = rwin(imports, [dirname]);
 ```
@@ -28,20 +26,21 @@ Where :
 
 `imports` : is an object that contains the accessor name paired with the module path
 
-`dirname` : is the source path, generally __dirname (useless if You only require installed modules)
+`dirname` : is the source path, generally <strong>__dirname</strong> (useless if You only require installed modules)
 
 
 Example:
 --------
-
 ``` JavaScript
-var rwin, imports, lib;
+var rwin,
+    imports,
+    lib;
 
 rwin = require('rwin');
 
 imports = {
-  installedModule: 'installed-module',
-  uninstalledModule: '/uninstalled-module/path'
+    installedModule: 'installed-module',
+    uninstalledModule: '/uninstalled-module/path'
 };
 
 lib = rwin(imports, __dirname);
