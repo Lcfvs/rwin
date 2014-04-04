@@ -5,7 +5,7 @@ Like to keep your requires in the script header?
 
 Tired to load modules that will possibly not been used and overloading your RAM?
 
-<strong>Require When It Needeed</strong> is a lightweight tool that loads (synchronously) the required module only when and if you really need it!
+<strong>Require When It Needeed</strong> is a lightweight tool that loads (<strong>synchronously</strong>) the required module only when and if you really need it!
 
 This Node.js module is under MIT License.
 
