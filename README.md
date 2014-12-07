@@ -1,6 +1,9 @@
 rwin
 ====
 
+[![Actual version published on NPM](https://badge.fury.io/js/rwin.png)](https://www.npmjs.org/package/rwin)
+[![npm module downloads per month](http://img.shields.io/npm/dm/rwin.svg)](https://www.npmjs.org/package/rwin)
+
 Like to keep your requires in the script header?
 
 Tired to load modules that will possibly not been used and overloading your RAM?
